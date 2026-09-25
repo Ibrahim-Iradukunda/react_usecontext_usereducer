@@ -1,4 +1,4 @@
-/* .app-shell {
+.app-shell {
   --background: #ffffff;
   --surface: #f4f8fb;
   --surface-strong: #e8f1f7;
@@ -129,4 +129,4 @@ footer { padding-bottom: 28px; }
   .task-card { padding: 22px; box-shadow: 7px 7px 0 var(--surface-strong); }
   .input-row { flex-direction: column; }
   .input-row button { min-height: 44px; }
-} */
+}
