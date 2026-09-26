@@ -4,7 +4,8 @@ export interface Task {
 }
 
 export type TaskAction =
-
+  | { type: 'add'; payload: Task }
+  | { type: 'remove'; payload: number }
 
 export function taskReducer(state: Task[], action: TaskAction): Task[] {
   switch (action.type) {
