@@ -1,10 +1,11 @@
-import { useReducer, useState, type FormEvent } from 'react'
+import { useReducer, useRef, useState, type FormEvent } from 'react'
 import { useTheme } from '../context/useTheme'
 import { taskReducer } from '../reducers/taskReducer'
 
 function TaskManager() {
   const [tasks, dispatch] = useReducer(taskReducer, [])
   const [taskText, setTaskText] = useState('')
+  const nextTaskId = useRef(0)
   const { theme } = useTheme()
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
@@ -13,7 +14,10 @@ function TaskManager() {
 
     if (!trimmedTask) return
 
-    dispatch({ type: 'add', payload: trimmedTask })
+    dispatch({
+      type: 'add',
+      payload: { id: nextTaskId.current++, text: trimmedTask },
+    })
     setTaskText('')
   }
 

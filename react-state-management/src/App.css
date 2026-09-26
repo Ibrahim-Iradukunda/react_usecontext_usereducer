@@ -111,7 +111,7 @@ h2 { margin-top: 8px; font-size: 2rem; }
 .task-form label { display: block; margin-bottom: 8px; }
 .input-row { display: flex; gap: 10px; }
 input { min-width: 0; flex: 1; padding: 13px 14px; color: var(--text); background: var(--background); border: 1px solid var(--line); border-radius: 5px; font: inherit; }
-.input-row button { padding: 0 18px; color: #ffffff; background: var(--button); border: 1px solid var(--button); border-radius: 5px; cursor: pointer; font: inherit; font-weight: 800; }
+.input-row button { padding: 0 18px; color: #000000; background: var(--button); border: 1px solid var(--button); border-radius: 5px; cursor: pointer; font: inherit; font-weight: 800; }
 .input-row button:disabled { cursor: not-allowed; opacity: 0.45; }
 .task-list { display: grid; gap: 10px; margin: 28px 0 0; padding: 0; list-style: none; }
 .task-list li { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 14px 0; border-top: 1px solid var(--line); }
