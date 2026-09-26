@@ -30,7 +30,7 @@ function AppContent() {
         </section>
         <TaskManager />
       </main>
-      <footer>Built with React, TypeScript, and two powerful hooks.</footer>
+      <footer>Built with React, TypeScript</footer>
     </div>
   )
 }

@@ -48,3 +48,43 @@ npm run build
 - `src/reducers/taskReducer.ts` contains the typed task state and actions.
 - `src/components/Navbar.tsx` uses the theme hook to switch themes.
 - `src/components/TaskManager.tsx` uses `useReducer` to manage tasks.
+
+# React Guided Learning Activity: Theme Switcher and Task Manager
+
+This Vite, React, and TypeScript project demonstrates two state-management patterns:
+
+- `useContext` shares a light or dark theme across the application.
+- `useReducer` manages the task list, including adding and removing tasks.
+
+## Run Locally
+
+```bash
+ls & cd react-state-management
+npm install
+npm run dev
+```
+
+Vite serves the app at `http://localhost:5173/` by default. Run the checks before submitting:
+
+```bash
+npm run lint
+npm run build
+```
+
+## Assignment Requirements
+
+- Theme switching uses the provided palette: light (`#FFFFFF`, `#000000`, `#1E90FF`) and dark (`#242629`, `#FFFFFF`, `#85D1B0`).
+- The theme context is typed, exposed through a provider, and consumed through the `useTheme` hook.
+- Tasks can be added and individually removed with a typed reducer.
+- Blank or whitespace-only tasks cannot be submitted.
+
+## Project Structure
+
+- `src/constants/theme.ts` defines the theme values and type.
+- `src/context/` contains the context, provider, and custom hook.
+- `src/reducers/taskReducer.ts` defines task state and reducer actions.
+- `src/components/` contains the theme toggle and task manager.
+
+## GitHub Submission
+
+Commit and push meaningful increments with clear messages. Keep `node_modules` out of version control, ensure the required source files and lockfile are included, and submit the repository URL as directed by your course.
